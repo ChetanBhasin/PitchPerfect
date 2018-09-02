@@ -25,8 +25,8 @@ class AuthenticationViewController: UIViewController {
     }
     
     func navigateToNextVC() -> Void {
-        if let recVC = storyboard?.instantiateViewController(withIdentifier: "RecordSoundViewController") {
-            navigationController?.pushViewController(recVC, animated: true)
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "authenticated", sender: self)
         }
     }
     
@@ -40,9 +40,7 @@ class AuthenticationViewController: UIViewController {
                 if success {
                     print("Authentication successful. Preparing for segue.")
                     self.authenticated = true
-                    if let recVC = self.storyboard?.instantiateViewController(withIdentifier: "RecordSoundViewController") {
-                        self.navigationController?.pushViewController(recVC, animated: true)
-                    }
+                    self.navigateToNextVC()
                 } else {
                     self.authenticated = false
                     self.authenticationLabel.text = "Authentication failed. Please try again."
