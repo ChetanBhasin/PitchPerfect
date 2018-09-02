@@ -18,6 +18,7 @@
 		619656D8213B1E25006B0237 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619656D7213B1E25006B0237 /* PlaySoundsViewController.swift */; };
 		619656DA213B2E2B006B0237 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619656D9213B2E2B006B0237 /* PlaySoundsViewController+Audio.swift */; };
 		619656DE213BD503006B0237 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619656DD213BD503006B0237 /* AuthenticationViewController.swift */; };
+		619656E0213BD768006B0237 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619656DF213BD768006B0237 /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		619656D7213B1E25006B0237 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		619656D9213B2E2B006B0237 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		619656DD213BD503006B0237 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		619656DF213BD768006B0237 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619656E0213BD768006B0237 /* LocalAuthentication.framework in Frameworks */,
 				619656D6213B145C006B0237 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +144,7 @@
 		619656D4213B145C006B0237 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				619656DF213BD768006B0237 /* LocalAuthentication.framework */,
 				619656D5213B145C006B0237 /* AVFoundation.framework */,
 			);
 			name = Frameworks;

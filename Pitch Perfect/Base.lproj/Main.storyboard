@@ -17,11 +17,34 @@
                     <view key="view" contentMode="scaleToFill" id="9p9-0E-isH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authentication Required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUt-Bo-E81">
+                                <rect key="frame" x="95" y="208" width="184" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74H-yq-Ygd" userLabel="AuthenticateButton">
+                                <rect key="frame" x="143" y="373" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="pressAuthButton:" destination="xHo-zH-0Oq" eventType="touchUpInside" id="Z88-id-Q8z"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="74H-yq-Ygd" firstAttribute="top" secondItem="pUt-Bo-E81" secondAttribute="bottom" constant="144" id="8iN-qW-IAR"/>
+                            <constraint firstItem="74H-yq-Ygd" firstAttribute="centerX" secondItem="pUt-Bo-E81" secondAttribute="centerX" id="Ebr-1g-lFg"/>
+                            <constraint firstItem="pUt-Bo-E81" firstAttribute="centerX" secondItem="9p9-0E-isH" secondAttribute="centerX" id="If7-AR-My3"/>
+                            <constraint firstItem="pUt-Bo-E81" firstAttribute="centerY" secondItem="9p9-0E-isH" secondAttribute="centerY" constant="-115" id="TVm-G1-Mmg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="z7k-fT-YaG"/>
                     </view>
                     <navigationItem key="navigationItem" id="I18-sy-PaT"/>
                     <connections>
+                        <outlet property="authButton" destination="74H-yq-Ygd" id="KkC-at-KD0"/>
+                        <outlet property="authenticationLabel" destination="pUt-Bo-E81" id="i1b-5z-nTT"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="authenticated" id="wed-5Z-77s"/>
                     </connections>
                 </viewController>
@@ -32,7 +55,7 @@
         <!--Record Sound View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RecordSoundViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecordSoundViewController" id="BYZ-38-t0r" customClass="RecordSoundViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
