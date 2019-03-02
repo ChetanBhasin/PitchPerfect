@@ -218,13 +218,16 @@
 				TargetAttributes = {
 					619656A2213AEF7A006B0237 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					619656B6213AEF7C006B0237 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 619656A2213AEF7A006B0237;
 					};
 					619656C1213AEF7C006B0237 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 619656A2213AEF7A006B0237;
 					};
 				};
@@ -467,7 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -485,7 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-Perfect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -505,7 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-PerfectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitch Perfect.app/Pitch Perfect";
 			};
@@ -526,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-PerfectTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pitch Perfect.app/Pitch Perfect";
 			};
@@ -546,7 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-PerfectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Pitch Perfect";
 			};
@@ -566,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chetanbhasin.Pitch-PerfectUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Pitch Perfect";
 			};
